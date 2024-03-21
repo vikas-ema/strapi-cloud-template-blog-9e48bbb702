@@ -512,6 +512,8 @@ export interface PluginContentReleasesRelease extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     releasedAt: Attribute.DateTime;
+    scheduledAt: Attribute.DateTime;
+    timezone: Attribute.String;
     actions: Attribute.Relation<
       'plugin::content-releases.release',
       'oneToMany',
@@ -971,6 +973,28 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
   };
 }
 
+export interface ApiNewNew extends Schema.CollectionType {
+  collectionName: 'news';
+  info: {
+    singularName: 'new';
+    pluralName: 'news';
+    displayName: 'News';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    news: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::new.new', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::new.new', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -994,6 +1018,7 @@ declare module '@strapi/types' {
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
+      'api::new.new': ApiNewNew;
     }
   }
 }
