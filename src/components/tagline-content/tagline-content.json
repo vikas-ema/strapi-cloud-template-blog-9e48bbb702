@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_tagline_content_tagline_contents",
+  "info": {
+    "displayName": "taglineContent"
+  },
+  "options": {},
+  "attributes": {
+    "tagline": {
+      "displayName": "tagline",
+      "type": "component",
+      "repeatable": false,
+      "component": "tagline.tagline"
+    }
+  }
+}

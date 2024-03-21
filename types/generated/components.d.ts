@@ -1,5 +1,15 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface BuiltEmaPointsBuiltEmaPoints extends Schema.Component {
+  collectionName: 'components_built_ema_points_built_ema_points';
+  info: {
+    displayName: 'builtEmaPoints';
+  };
+  attributes: {
+    title: Attribute.Text;
+  };
+}
+
 export interface SharedMedia extends Schema.Component {
   collectionName: 'components_shared_media';
   info: {
@@ -62,14 +72,38 @@ export interface SharedSlider extends Schema.Component {
   };
 }
 
+export interface TaglineContentTaglineContent extends Schema.Component {
+  collectionName: 'components_tagline_content_tagline_contents';
+  info: {
+    displayName: 'taglineContent';
+  };
+  attributes: {
+    tagline: Attribute.Component<'tagline.tagline'>;
+  };
+}
+
+export interface TaglineTagline extends Schema.Component {
+  collectionName: 'components_tagline_taglines';
+  info: {
+    displayName: 'tagline';
+  };
+  attributes: {
+    tagline: Attribute.Text;
+    taglineImage: Attribute.Media;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'built-ema-points.built-ema-points': BuiltEmaPointsBuiltEmaPoints;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'tagline-content.tagline-content': TaglineContentTaglineContent;
+      'tagline.tagline': TaglineTagline;
     }
   }
 }

@@ -1,0 +1,126 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle1": {
+      "type": "text"
+    },
+    "heroTitle2": {
+      "type": "text"
+    },
+    "heroDescription1": {
+      "type": "text"
+    },
+    "secondHeroSectionTitle": {
+      "type": "text"
+    },
+    "secondHeroSectionDesc": {
+      "type": "text"
+    },
+    "whyBuiltEmaTitle": {
+      "type": "text"
+    },
+    "WhyBuiltEmaDesc": {
+      "type": "text"
+    },
+    "extraChallengesContent": {
+      "type": "text"
+    },
+    "graphMainTitle": {
+      "type": "text"
+    },
+    "graphLlmTitle": {
+      "type": "text"
+    },
+    "graphLlmDescription": {
+      "type": "text"
+    },
+    "whyTrustEmaTitle": {
+      "type": "text"
+    },
+    "trustEmaFastesTitle": {
+      "type": "text"
+    },
+    "trustEmaFastestDesc": {
+      "type": "text"
+    },
+    "lowestRistTitle": {
+      "type": "text"
+    },
+    "lowestRiskDesc": {
+      "type": "text"
+    },
+    "extraLinkTitle": {
+      "type": "text"
+    },
+    "extraLinkValueTrustEma": {
+      "type": "text"
+    },
+    "trustEmaRioTitle": {
+      "type": "text"
+    },
+    "trustEmaRoiDesc": {
+      "type": "text"
+    },
+    "personaSectionEyebrow": {
+      "type": "text"
+    },
+    "personaSectionTitle": {
+      "type": "text"
+    },
+    "personaSectionDesc": {
+      "type": "text"
+    },
+    "ledTitle": {
+      "type": "text"
+    },
+    "ledDescription1": {
+      "type": "text"
+    },
+    "ledDescription2": {
+      "type": "text"
+    },
+    "partnersTitle": {
+      "type": "text"
+    },
+    "revolutionizeTitle": {
+      "type": "text"
+    },
+    "ourcustomerTitle": {
+      "type": "text"
+    },
+    "standardPersonasTitle": {
+      "type": "text"
+    },
+    "specialzedPersonas": {
+      "type": "text"
+    },
+    "fusionModelTitle": {
+      "type": "text"
+    },
+    "fusionByomText": {
+      "type": "text"
+    },
+    "taglineContent": {
+      "displayName": "taglineContent",
+      "type": "component",
+      "repeatable": true,
+      "component": "tagline-content.tagline-content"
+    },
+    "builtEmaPoints": {
+      "displayName": "builtEmaPoints",
+      "type": "component",
+      "repeatable": true,
+      "component": "built-ema-points.built-ema-points"
+    }
+  }
+}

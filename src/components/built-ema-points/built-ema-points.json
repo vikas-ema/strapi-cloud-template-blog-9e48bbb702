@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_built_ema_points_built_ema_points",
+  "info": {
+    "displayName": "builtEmaPoints"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

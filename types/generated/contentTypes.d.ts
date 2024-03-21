@@ -973,6 +973,68 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
   };
 }
 
+export interface ApiHomeHome extends Schema.SingleType {
+  collectionName: 'homes';
+  info: {
+    singularName: 'home';
+    pluralName: 'homes';
+    displayName: 'home';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    heroTitle1: Attribute.Text;
+    heroTitle2: Attribute.Text;
+    heroDescription1: Attribute.Text;
+    secondHeroSectionTitle: Attribute.Text;
+    secondHeroSectionDesc: Attribute.Text;
+    whyBuiltEmaTitle: Attribute.Text;
+    WhyBuiltEmaDesc: Attribute.Text;
+    extraChallengesContent: Attribute.Text;
+    graphMainTitle: Attribute.Text;
+    graphLlmTitle: Attribute.Text;
+    graphLlmDescription: Attribute.Text;
+    whyTrustEmaTitle: Attribute.Text;
+    trustEmaFastesTitle: Attribute.Text;
+    trustEmaFastestDesc: Attribute.Text;
+    lowestRistTitle: Attribute.Text;
+    lowestRiskDesc: Attribute.Text;
+    extraLinkTitle: Attribute.Text;
+    extraLinkValueTrustEma: Attribute.Text;
+    trustEmaRioTitle: Attribute.Text;
+    trustEmaRoiDesc: Attribute.Text;
+    personaSectionEyebrow: Attribute.Text;
+    personaSectionTitle: Attribute.Text;
+    personaSectionDesc: Attribute.Text;
+    ledTitle: Attribute.Text;
+    ledDescription1: Attribute.Text;
+    ledDescription2: Attribute.Text;
+    partnersTitle: Attribute.Text;
+    revolutionizeTitle: Attribute.Text;
+    ourcustomerTitle: Attribute.Text;
+    standardPersonasTitle: Attribute.Text;
+    specialzedPersonas: Attribute.Text;
+    fusionModelTitle: Attribute.Text;
+    fusionByomText: Attribute.Text;
+    taglineContent: Attribute.Component<
+      'tagline-content.tagline-content',
+      true
+    >;
+    builtEmaPoints: Attribute.Component<
+      'built-ema-points.built-ema-points',
+      true
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiNewNew extends Schema.CollectionType {
   collectionName: 'news';
   info: {
@@ -1018,6 +1080,7 @@ declare module '@strapi/types' {
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
+      'api::home.home': ApiHomeHome;
       'api::new.new': ApiNewNew;
     }
   }
