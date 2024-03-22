@@ -1112,10 +1112,6 @@ export interface ApiHomeHome extends Schema.SingleType {
     gifUrl: Attribute.Media;
     graphRoleCont: Attribute.Component<'graph-role-cont.graph-role-cont', true>;
     quotesData: Attribute.Component<'quotes-data.quotes-data'>;
-    desktopGraphLeftSection: Attribute.Component<
-      'desktop-graph-left-section.desktop-graph-left-section',
-      true
-    >;
     lowestCircleBadgeImage: Attribute.Component<
       'lowest-circle-badge-image.lowest-circle-badge-image',
       true
