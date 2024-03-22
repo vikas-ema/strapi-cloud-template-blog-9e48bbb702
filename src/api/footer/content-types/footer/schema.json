@@ -1,0 +1,98 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "addressLine1": {
+      "type": "text"
+    },
+    "addressLine2": {
+      "type": "text"
+    },
+    "emaNumber": {
+      "type": "text"
+    },
+    "copyRightText": {
+      "type": "text"
+    },
+    "privacyPolicy": {
+      "type": "text"
+    },
+    "hireEmaText": {
+      "type": "text"
+    },
+    "emaIconWhite": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "footerHead": {
+      "displayName": "footerHead",
+      "type": "component",
+      "repeatable": true,
+      "component": "footer-head.footer-head"
+    },
+    "footerSectionDesktop1": {
+      "displayName": "footerSectionDesktop1",
+      "type": "component",
+      "repeatable": true,
+      "component": "footer-section-desktop1.footer-section-desktop1"
+    },
+    "footerSectionDesktop2": {
+      "displayName": "footerSectionDesktop2",
+      "type": "component",
+      "repeatable": true,
+      "component": "footer-section-desktop2.footer-section-desktop2"
+    },
+    "footerSectionDesktop3": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer-section-desktop2.footer-section-desktop2"
+    },
+    "solutionText": {
+      "displayName": "solutionText",
+      "type": "component",
+      "repeatable": false,
+      "component": "solution-text.solution-text"
+    },
+    "companyText": {
+      "displayName": "companyText",
+      "type": "component",
+      "repeatable": false,
+      "component": "company-text.company-text"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "company-text.company-text"
+    },
+    "linkedIn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "company-text.company-text"
+    },
+    "headerContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer-section-desktop2.footer-section-desktop2"
+    },
+    "resource": {
+      "type": "component",
+      "repeatable": false,
+      "component": "company-text.company-text"
+    }
+  }
+}

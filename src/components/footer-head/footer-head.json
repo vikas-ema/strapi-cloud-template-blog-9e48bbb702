@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_footer_head_footer_heads",
+  "info": {
+    "displayName": "footerHead"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

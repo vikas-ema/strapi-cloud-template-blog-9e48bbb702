@@ -982,6 +982,64 @@ export interface ApiCompanyCompany extends Schema.SingleType {
   };
 }
 
+export interface ApiFooterFooter extends Schema.SingleType {
+  collectionName: 'footers';
+  info: {
+    singularName: 'footer';
+    pluralName: 'footers';
+    displayName: 'Footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    addressLine1: Attribute.Text;
+    addressLine2: Attribute.Text;
+    emaNumber: Attribute.Text;
+    copyRightText: Attribute.Text;
+    privacyPolicy: Attribute.Text;
+    hireEmaText: Attribute.Text;
+    emaIconWhite: Attribute.Media;
+    footerHead: Attribute.Component<'footer-head.footer-head', true>;
+    footerSectionDesktop1: Attribute.Component<
+      'footer-section-desktop1.footer-section-desktop1',
+      true
+    >;
+    footerSectionDesktop2: Attribute.Component<
+      'footer-section-desktop2.footer-section-desktop2',
+      true
+    >;
+    footerSectionDesktop3: Attribute.Component<
+      'footer-section-desktop2.footer-section-desktop2',
+      true
+    >;
+    solutionText: Attribute.Component<'solution-text.solution-text'>;
+    companyText: Attribute.Component<'company-text.company-text'>;
+    faq: Attribute.Component<'company-text.company-text'>;
+    linkedIn: Attribute.Component<'company-text.company-text'>;
+    headerContent: Attribute.Component<
+      'footer-section-desktop2.footer-section-desktop2',
+      true
+    >;
+    resource: Attribute.Component<'company-text.company-text'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::footer.footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::footer.footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Schema.SingleType {
   collectionName: 'globals';
   info: {
@@ -1116,6 +1174,10 @@ export interface ApiHomeHome extends Schema.SingleType {
       'lowest-circle-badge-image.lowest-circle-badge-image',
       true
     >;
+    desktopGraphLeftSection: Attribute.Component<
+      'desktop-graph-left-section.desktop-graph-left-section',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1171,6 +1233,7 @@ declare module '@strapi/types' {
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
       'api::company.company': ApiCompanyCompany;
+      'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;
       'api::home.home': ApiHomeHome;
       'api::new.new': ApiNewNew;

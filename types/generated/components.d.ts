@@ -23,6 +23,63 @@ export interface BuiltEmaPointsBuiltEmaPoints extends Schema.Component {
   };
 }
 
+export interface CompanyTextCompanyText extends Schema.Component {
+  collectionName: 'components_company_text_company_texts';
+  info: {
+    displayName: 'companyText';
+  };
+  attributes: {
+    title: Attribute.Text;
+    redirectLink: Attribute.Text;
+  };
+}
+
+export interface DesktopGraphLeftSectionDesktopGraphLeftSection
+  extends Schema.Component {
+  collectionName: 'components_desktop_graph_left_section_desktop_graph_left_sections';
+  info: {
+    displayName: 'desktopGraphLeftSection';
+  };
+  attributes: {
+    header: Attribute.Text;
+    description: Attribute.Text;
+  };
+}
+
+export interface FooterHeadFooterHead extends Schema.Component {
+  collectionName: 'components_footer_head_footer_heads';
+  info: {
+    displayName: 'footerHead';
+  };
+  attributes: {
+    title: Attribute.Text;
+  };
+}
+
+export interface FooterSectionDesktop1FooterSectionDesktop1
+  extends Schema.Component {
+  collectionName: 'components_footer_section_desktop1_footer_section_desktop1s';
+  info: {
+    displayName: 'footerSectionDesktop1';
+  };
+  attributes: {
+    title: Attribute.Text;
+    redirectLink: Attribute.Text;
+  };
+}
+
+export interface FooterSectionDesktop2FooterSectionDesktop2
+  extends Schema.Component {
+  collectionName: 'components_footer_section_desktop2_footer_section_desktop2s';
+  info: {
+    displayName: 'footerSectionDesktop2';
+  };
+  attributes: {
+    title: Attribute.Text;
+    redirectLink: Attribute.Text;
+  };
+}
+
 export interface FusionModelValuesFusionModelValues extends Schema.Component {
   collectionName: 'components_fusion_model_values_fusion_model_values';
   info: {
@@ -199,6 +256,17 @@ export interface SharedSlider extends Schema.Component {
   };
 }
 
+export interface SolutionTextSolutionText extends Schema.Component {
+  collectionName: 'components_solution_text_solution_texts';
+  info: {
+    displayName: 'solutionText';
+  };
+  attributes: {
+    title: Attribute.Text;
+    redirectLink: Attribute.Text;
+  };
+}
+
 export interface SpecialzedPersonasSpecialzedPersonas extends Schema.Component {
   collectionName: 'components_specialzed_personas_specialzed_personas';
   info: {
@@ -241,6 +309,11 @@ declare module '@strapi/types' {
     export interface Components {
       'about-profile.about-profile': AboutProfileAboutProfile;
       'built-ema-points.built-ema-points': BuiltEmaPointsBuiltEmaPoints;
+      'company-text.company-text': CompanyTextCompanyText;
+      'desktop-graph-left-section.desktop-graph-left-section': DesktopGraphLeftSectionDesktopGraphLeftSection;
+      'footer-head.footer-head': FooterHeadFooterHead;
+      'footer-section-desktop1.footer-section-desktop1': FooterSectionDesktop1FooterSectionDesktop1;
+      'footer-section-desktop2.footer-section-desktop2': FooterSectionDesktop2FooterSectionDesktop2;
       'fusion-model-values.fusion-model-values': FusionModelValuesFusionModelValues;
       'graph-chip-content.graph-chip-content': GraphChipContentGraphChipContent;
       'graph-role-cont.graph-role-cont': GraphRoleContGraphRoleCont;
@@ -256,6 +329,7 @@ declare module '@strapi/types' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'solution-text.solution-text': SolutionTextSolutionText;
       'specialzed-personas.specialzed-personas': SpecialzedPersonasSpecialzedPersonas;
       'tagline-content.tagline-content': TaglineContentTaglineContent;
       'tagline.tagline': TaglineTagline;

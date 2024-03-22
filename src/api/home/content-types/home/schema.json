@@ -338,6 +338,12 @@
       "type": "component",
       "repeatable": true,
       "component": "lowest-circle-badge-image.lowest-circle-badge-image"
+    },
+    "desktopGraphLeftSection": {
+      "displayName": "desktopGraphLeftSection",
+      "type": "component",
+      "repeatable": true,
+      "component": "desktop-graph-left-section.desktop-graph-left-section"
     }
   }
 }

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_footer_section_desktop2_footer_section_desktop2s",
+  "info": {
+    "displayName": "footerSectionDesktop2"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "redirectLink": {
+      "type": "text"
+    }
+  }
+}

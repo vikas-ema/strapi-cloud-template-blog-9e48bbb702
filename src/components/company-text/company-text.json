@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_company_text_company_texts",
+  "info": {
+    "displayName": "companyText"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "redirectLink": {
+      "type": "text"
+    }
+  }
+}
