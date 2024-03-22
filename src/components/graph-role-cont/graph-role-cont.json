@@ -1,15 +1,14 @@
 {
-  "collectionName": "components_tagline_content_tagline_contents",
+  "collectionName": "components_graph_role_cont_graph_role_conts",
   "info": {
-    "displayName": "taglineContent",
-    "description": ""
+    "displayName": "graphRoleCont"
   },
   "options": {},
   "attributes": {
-    "tagline": {
+    "roleName": {
       "type": "text"
     },
-    "taglineImage": {
+    "roleImg": {
       "allowedTypes": [
         "images",
         "files",

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "home"
+    "displayName": "home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -102,7 +103,10 @@
       "type": "text"
     },
     "specialzedPersonas": {
-      "type": "text"
+      "displayName": "specialzedPersonas",
+      "type": "component",
+      "repeatable": true,
+      "component": "specialzed-personas.specialzed-personas"
     },
     "fusionModelTitle": {
       "type": "text"
@@ -121,6 +125,215 @@
       "type": "component",
       "repeatable": true,
       "component": "built-ema-points.built-ema-points"
+    },
+    "extraVideoContent": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "secondHeroSectionImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "desktopGraphLeftSection": {
+      "displayName": "desktopGraphLeftSection",
+      "type": "component",
+      "repeatable": true,
+      "component": "desktop-graph-left-section.desktop-graph-left-section"
+    },
+    "greenBoxContent": {
+      "displayName": "greenBoxContent",
+      "type": "component",
+      "repeatable": true,
+      "component": "green-box-content.green-box-content"
+    },
+    "graphChipContent": {
+      "displayName": "graphChipContent",
+      "type": "component",
+      "repeatable": true,
+      "component": "graph-chip-content.graph-chip-content"
+    },
+    "trustEmaSpeedIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "lowestRiskIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "lowestContractImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "lowestCircleBadgeImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "trustEmaRioIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "trustEmaRoiSideGraph": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "trustEmaRoiSideMobile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "personaSupportContent": {
+      "displayName": "personaSupportContent",
+      "type": "component",
+      "repeatable": true,
+      "component": "persona-support-content.persona-support-content"
+    },
+    "partnerLogo": {
+      "displayName": "partnerLogo",
+      "type": "component",
+      "repeatable": true,
+      "component": "partner-logo.partner-logo"
+    },
+    "revolutionizeImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "middleGraphMobile": {
+      "displayName": "middleGraphMobile",
+      "type": "component",
+      "repeatable": true,
+      "component": "middle-graph-mobile.middle-graph-mobile"
+    },
+    "trustEmaFastImgDesktop": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "trustEmaFastMobile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "hireEmaBannerMobile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "standardPersonasContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "specialzed-personas.specialzed-personas"
+    },
+    "fusionModelValues": {
+      "displayName": "fusionModelValues",
+      "type": "component",
+      "repeatable": true,
+      "component": "fusion-model-values.fusion-model-values"
+    },
+    "simpleGifThumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "gifUrl": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "graphRoleCont": {
+      "displayName": "graphRoleCont",
+      "type": "component",
+      "repeatable": true,
+      "component": "graph-role-cont.graph-role-cont"
+    },
+    "quotesData": {
+      "displayName": "quotesData",
+      "type": "component",
+      "repeatable": false,
+      "component": "quotes-data.quotes-data"
     }
   }
 }

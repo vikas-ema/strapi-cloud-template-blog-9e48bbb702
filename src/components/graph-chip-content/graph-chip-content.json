@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_graph_chip_content_graph_chip_contents",
+  "info": {
+    "displayName": "graphChipContent"
+  },
+  "options": {},
+  "attributes": {
+    "chipValue": {
+      "type": "text"
+    }
+  }
+}

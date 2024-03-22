@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_quotes_data_quotes_data",
+  "info": {
+    "displayName": "quotesData"
+  },
+  "options": {},
+  "attributes": {
+    "quotes": {
+      "type": "text"
+    },
+    "quotesSubTitle": {
+      "type": "text"
+    }
+  }
+}

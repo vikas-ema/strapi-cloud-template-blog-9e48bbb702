@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_middle_graph_mobile_middle_graph_mobiles",
+  "info": {
+    "displayName": "middleGraphMobile"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

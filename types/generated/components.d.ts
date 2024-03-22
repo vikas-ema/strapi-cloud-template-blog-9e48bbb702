@@ -4,9 +4,113 @@ export interface BuiltEmaPointsBuiltEmaPoints extends Schema.Component {
   collectionName: 'components_built_ema_points_built_ema_points';
   info: {
     displayName: 'builtEmaPoints';
+    description: '';
   };
   attributes: {
     title: Attribute.Text;
+    description: Attribute.Text;
+    pointsImage: Attribute.Media;
+  };
+}
+
+export interface DesktopGraphLeftSectionDesktopGraphLeftSection
+  extends Schema.Component {
+  collectionName: 'components_desktop_graph_left_section_desktop_graph_left_sections';
+  info: {
+    displayName: 'desktopGraphLeftSection';
+  };
+  attributes: {
+    header: Attribute.Text;
+    description: Attribute.Text;
+  };
+}
+
+export interface FusionModelValuesFusionModelValues extends Schema.Component {
+  collectionName: 'components_fusion_model_values_fusion_model_values';
+  info: {
+    displayName: 'fusionModelValues';
+  };
+  attributes: {
+    title: Attribute.Text;
+  };
+}
+
+export interface GraphChipContentGraphChipContent extends Schema.Component {
+  collectionName: 'components_graph_chip_content_graph_chip_contents';
+  info: {
+    displayName: 'graphChipContent';
+  };
+  attributes: {
+    chipValue: Attribute.Text;
+  };
+}
+
+export interface GraphRoleContGraphRoleCont extends Schema.Component {
+  collectionName: 'components_graph_role_cont_graph_role_conts';
+  info: {
+    displayName: 'graphRoleCont';
+  };
+  attributes: {
+    roleName: Attribute.Text;
+    roleImg: Attribute.Media;
+  };
+}
+
+export interface GreenBoxContentGreenBoxContent extends Schema.Component {
+  collectionName: 'components_green_box_content_green_box_contents';
+  info: {
+    displayName: 'greenBoxContent';
+  };
+  attributes: {
+    title: Attribute.Text;
+    hoverFirstText: Attribute.Text;
+    hoverSecondLine: Attribute.Text;
+    buttonText: Attribute.Text;
+    redirectLink: Attribute.Text;
+  };
+}
+
+export interface MiddleGraphMobileMiddleGraphMobile extends Schema.Component {
+  collectionName: 'components_middle_graph_mobile_middle_graph_mobiles';
+  info: {
+    displayName: 'middleGraphMobile';
+  };
+  attributes: {
+    title: Attribute.Text;
+  };
+}
+
+export interface PartnerLogoPartnerLogo extends Schema.Component {
+  collectionName: 'components_partner_logo_partner_logos';
+  info: {
+    displayName: 'partnerLogo';
+  };
+  attributes: {};
+}
+
+export interface PersonaSupportContentPersonaSupportContent
+  extends Schema.Component {
+  collectionName: 'components_persona_support_content_persona_support_contents';
+  info: {
+    displayName: 'personaSupportContent';
+  };
+  attributes: {
+    title: Attribute.Text;
+    description: Attribute.Text;
+    showVideo: Attribute.Boolean;
+    customerVideo: Attribute.Media;
+    sideBannerImg: Attribute.Media;
+  };
+}
+
+export interface QuotesDataQuotesData extends Schema.Component {
+  collectionName: 'components_quotes_data_quotes_data';
+  info: {
+    displayName: 'quotesData';
+  };
+  attributes: {
+    quotes: Attribute.Text;
+    quotesSubTitle: Attribute.Text;
   };
 }
 
@@ -72,13 +176,29 @@ export interface SharedSlider extends Schema.Component {
   };
 }
 
+export interface SpecialzedPersonasSpecialzedPersonas extends Schema.Component {
+  collectionName: 'components_specialzed_personas_specialzed_personas';
+  info: {
+    displayName: 'specialzedPersonas';
+  };
+  attributes: {
+    title: Attribute.Text;
+    description: Attribute.Text;
+    showVideo: Attribute.Boolean;
+    customerVideo: Attribute.Media;
+    sideBannerImg: Attribute.Media;
+  };
+}
+
 export interface TaglineContentTaglineContent extends Schema.Component {
   collectionName: 'components_tagline_content_tagline_contents';
   info: {
     displayName: 'taglineContent';
+    description: '';
   };
   attributes: {
-    tagline: Attribute.Component<'tagline.tagline'>;
+    tagline: Attribute.Text;
+    taglineImage: Attribute.Media;
   };
 }
 
@@ -97,11 +217,21 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'built-ema-points.built-ema-points': BuiltEmaPointsBuiltEmaPoints;
+      'desktop-graph-left-section.desktop-graph-left-section': DesktopGraphLeftSectionDesktopGraphLeftSection;
+      'fusion-model-values.fusion-model-values': FusionModelValuesFusionModelValues;
+      'graph-chip-content.graph-chip-content': GraphChipContentGraphChipContent;
+      'graph-role-cont.graph-role-cont': GraphRoleContGraphRoleCont;
+      'green-box-content.green-box-content': GreenBoxContentGreenBoxContent;
+      'middle-graph-mobile.middle-graph-mobile': MiddleGraphMobileMiddleGraphMobile;
+      'partner-logo.partner-logo': PartnerLogoPartnerLogo;
+      'persona-support-content.persona-support-content': PersonaSupportContentPersonaSupportContent;
+      'quotes-data.quotes-data': QuotesDataQuotesData;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'specialzed-personas.specialzed-personas': SpecialzedPersonasSpecialzedPersonas;
       'tagline-content.tagline-content': TaglineContentTaglineContent;
       'tagline.tagline': TaglineTagline;
     }

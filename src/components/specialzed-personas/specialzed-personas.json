@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_specialzed_personas_specialzed_personas",
+  "info": {
+    "displayName": "specialzedPersonas"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "showVideo": {
+      "type": "boolean"
+    },
+    "customerVideo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sideBannerImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -585,6 +585,53 @@ export interface PluginContentReleasesReleaseAction
   };
 }
 
+export interface PluginI18NLocale extends Schema.CollectionType {
+  collectionName: 'i18n_locale';
+  info: {
+    singularName: 'locale';
+    pluralName: 'locales';
+    collectionName: 'locales';
+    displayName: 'Locale';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: false;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    name: Attribute.String &
+      Attribute.SetMinMax<
+        {
+          min: 1;
+          max: 50;
+        },
+        number
+      >;
+    code: Attribute.String & Attribute.Unique;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'plugin::i18n.locale',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'plugin::i18n.locale',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUsersPermissionsPermission
   extends Schema.CollectionType {
   collectionName: 'up_permissions';
@@ -729,53 +776,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'plugin::users-permissions.user',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface PluginI18NLocale extends Schema.CollectionType {
-  collectionName: 'i18n_locale';
-  info: {
-    singularName: 'locale';
-    pluralName: 'locales';
-    collectionName: 'locales';
-    displayName: 'Locale';
-    description: '';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  pluginOptions: {
-    'content-manager': {
-      visible: false;
-    };
-    'content-type-builder': {
-      visible: false;
-    };
-  };
-  attributes: {
-    name: Attribute.String &
-      Attribute.SetMinMax<
-        {
-          min: 1;
-          max: 50;
-        },
-        number
-      >;
-    code: Attribute.String & Attribute.Unique;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'plugin::i18n.locale',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'plugin::i18n.locale',
       'oneToOne',
       'admin::user'
     > &
@@ -979,6 +979,7 @@ export interface ApiHomeHome extends Schema.SingleType {
     singularName: 'home';
     pluralName: 'homes';
     displayName: 'home';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1014,7 +1015,10 @@ export interface ApiHomeHome extends Schema.SingleType {
     revolutionizeTitle: Attribute.Text;
     ourcustomerTitle: Attribute.Text;
     standardPersonasTitle: Attribute.Text;
-    specialzedPersonas: Attribute.Text;
+    specialzedPersonas: Attribute.Component<
+      'specialzed-personas.specialzed-personas',
+      true
+    >;
     fusionModelTitle: Attribute.Text;
     fusionByomText: Attribute.Text;
     taglineContent: Attribute.Component<
@@ -1025,6 +1029,52 @@ export interface ApiHomeHome extends Schema.SingleType {
       'built-ema-points.built-ema-points',
       true
     >;
+    extraVideoContent: Attribute.Media;
+    secondHeroSectionImg: Attribute.Media;
+    desktopGraphLeftSection: Attribute.Component<
+      'desktop-graph-left-section.desktop-graph-left-section',
+      true
+    >;
+    greenBoxContent: Attribute.Component<
+      'green-box-content.green-box-content',
+      true
+    >;
+    graphChipContent: Attribute.Component<
+      'graph-chip-content.graph-chip-content',
+      true
+    >;
+    trustEmaSpeedIcon: Attribute.Media;
+    lowestRiskIcon: Attribute.Media;
+    lowestContractImg: Attribute.Media;
+    lowestCircleBadgeImage: Attribute.Media;
+    trustEmaRioIcon: Attribute.Media;
+    trustEmaRoiSideGraph: Attribute.Media;
+    trustEmaRoiSideMobile: Attribute.Media;
+    personaSupportContent: Attribute.Component<
+      'persona-support-content.persona-support-content',
+      true
+    >;
+    partnerLogo: Attribute.Component<'partner-logo.partner-logo', true>;
+    revolutionizeImg: Attribute.Media;
+    middleGraphMobile: Attribute.Component<
+      'middle-graph-mobile.middle-graph-mobile',
+      true
+    >;
+    trustEmaFastImgDesktop: Attribute.Media;
+    trustEmaFastMobile: Attribute.Media;
+    hireEmaBannerMobile: Attribute.Media;
+    standardPersonasContent: Attribute.Component<
+      'specialzed-personas.specialzed-personas',
+      true
+    >;
+    fusionModelValues: Attribute.Component<
+      'fusion-model-values.fusion-model-values',
+      true
+    >;
+    simpleGifThumbnail: Attribute.Media;
+    gifUrl: Attribute.Media;
+    graphRoleCont: Attribute.Component<'graph-role-cont.graph-role-cont', true>;
+    quotesData: Attribute.Component<'quotes-data.quotes-data'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1071,10 +1121,10 @@ declare module '@strapi/types' {
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
+      'plugin::i18n.locale': PluginI18NLocale;
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
-      'plugin::i18n.locale': PluginI18NLocale;
       'api::about.about': ApiAboutAbout;
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_green_box_content_green_box_contents",
+  "info": {
+    "displayName": "greenBoxContent"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "hoverFirstText": {
+      "type": "text"
+    },
+    "hoverSecondLine": {
+      "type": "text"
+    },
+    "buttonText": {
+      "type": "text"
+    },
+    "redirectLink": {
+      "type": "text"
+    }
+  }
+}

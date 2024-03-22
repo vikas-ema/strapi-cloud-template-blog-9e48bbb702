@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_persona_support_content_persona_support_contents",
+  "info": {
+    "displayName": "personaSupportContent"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "showVideo": {
+      "type": "boolean"
+    },
+    "customerVideo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sideBannerImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

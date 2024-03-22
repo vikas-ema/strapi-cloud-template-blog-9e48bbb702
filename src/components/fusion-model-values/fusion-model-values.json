@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_fusion_model_values_fusion_model_values",
+  "info": {
+    "displayName": "fusionModelValues"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}
