@@ -20,6 +20,9 @@
       "type": "component",
       "repeatable": true,
       "component": "leadership-bios.leadership-bios"
+    },
+    "heroDescription": {
+      "type": "text"
     }
   }
 }

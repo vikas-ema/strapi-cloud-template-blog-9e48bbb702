@@ -957,6 +957,7 @@ export interface ApiCompanyCompany extends Schema.SingleType {
       'leadership-bios.leadership-bios',
       true
     >;
+    heroDescription: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
