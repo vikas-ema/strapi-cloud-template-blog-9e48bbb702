@@ -94,6 +94,17 @@ export interface LeadershipBiosLeadershipBios extends Schema.Component {
   };
 }
 
+export interface LowestCircleBadgeImageLowestCircleBadgeImage
+  extends Schema.Component {
+  collectionName: 'components_lowest_circle_badge_image_lowest_circle_badge_images';
+  info: {
+    displayName: 'lowestCircleBadgeImage';
+  };
+  attributes: {
+    badgeIcon: Attribute.Media;
+  };
+}
+
 export interface MiddleGraphMobileMiddleGraphMobile extends Schema.Component {
   collectionName: 'components_middle_graph_mobile_middle_graph_mobiles';
   info: {
@@ -248,6 +259,7 @@ declare module '@strapi/types' {
       'graph-role-cont.graph-role-cont': GraphRoleContGraphRoleCont;
       'green-box-content.green-box-content': GreenBoxContentGreenBoxContent;
       'leadership-bios.leadership-bios': LeadershipBiosLeadershipBios;
+      'lowest-circle-badge-image.lowest-circle-badge-image': LowestCircleBadgeImageLowestCircleBadgeImage;
       'middle-graph-mobile.middle-graph-mobile': MiddleGraphMobileMiddleGraphMobile;
       'partner-logo.partner-logo': PartnerLogoPartnerLogo;
       'persona-support-content.persona-support-content': PersonaSupportContentPersonaSupportContent;

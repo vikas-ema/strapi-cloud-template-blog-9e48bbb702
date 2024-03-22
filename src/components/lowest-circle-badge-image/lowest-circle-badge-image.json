@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_lowest_circle_badge_image_lowest_circle_badge_images",
+  "info": {
+    "displayName": "lowestCircleBadgeImage"
+  },
+  "options": {},
+  "attributes": {
+    "badgeIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

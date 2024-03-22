@@ -1084,7 +1084,6 @@ export interface ApiHomeHome extends Schema.SingleType {
     trustEmaSpeedIcon: Attribute.Media;
     lowestRiskIcon: Attribute.Media;
     lowestContractImg: Attribute.Media;
-    lowestCircleBadgeImage: Attribute.Media;
     trustEmaRioIcon: Attribute.Media;
     trustEmaRoiSideGraph: Attribute.Media;
     trustEmaRoiSideMobile: Attribute.Media;
@@ -1115,6 +1114,10 @@ export interface ApiHomeHome extends Schema.SingleType {
     quotesData: Attribute.Component<'quotes-data.quotes-data'>;
     desktopGraphLeftSection: Attribute.Component<
       'desktop-graph-left-section.desktop-graph-left-section',
+      true
+    >;
+    lowestCircleBadgeImage: Attribute.Component<
+      'lowest-circle-badge-image.lowest-circle-badge-image',
       true
     >;
     createdAt: Attribute.DateTime;
