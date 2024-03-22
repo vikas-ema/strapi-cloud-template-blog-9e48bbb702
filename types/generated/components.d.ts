@@ -1,5 +1,15 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface AboutProfileAboutProfile extends Schema.Component {
+  collectionName: 'components_about_profile_about_profiles';
+  info: {
+    displayName: 'aboutProfile';
+  };
+  attributes: {
+    description: Attribute.Text;
+  };
+}
+
 export interface BuiltEmaPointsBuiltEmaPoints extends Schema.Component {
   collectionName: 'components_built_ema_points_built_ema_points';
   info: {
@@ -67,6 +77,20 @@ export interface GreenBoxContentGreenBoxContent extends Schema.Component {
     hoverSecondLine: Attribute.Text;
     buttonText: Attribute.Text;
     redirectLink: Attribute.Text;
+  };
+}
+
+export interface LeadershipBiosLeadershipBios extends Schema.Component {
+  collectionName: 'components_leadership_bios_leadership_bios';
+  info: {
+    displayName: 'leadershipBios';
+  };
+  attributes: {
+    name: Attribute.Text;
+    designation: Attribute.Text;
+    designationMobile: Attribute.Text;
+    profilePic: Attribute.Media;
+    aboutProfile: Attribute.Component<'about-profile.about-profile', true>;
   };
 }
 
@@ -216,12 +240,14 @@ export interface TaglineTagline extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'about-profile.about-profile': AboutProfileAboutProfile;
       'built-ema-points.built-ema-points': BuiltEmaPointsBuiltEmaPoints;
       'desktop-graph-left-section.desktop-graph-left-section': DesktopGraphLeftSectionDesktopGraphLeftSection;
       'fusion-model-values.fusion-model-values': FusionModelValuesFusionModelValues;
       'graph-chip-content.graph-chip-content': GraphChipContentGraphChipContent;
       'graph-role-cont.graph-role-cont': GraphRoleContGraphRoleCont;
       'green-box-content.green-box-content': GreenBoxContentGreenBoxContent;
+      'leadership-bios.leadership-bios': LeadershipBiosLeadershipBios;
       'middle-graph-mobile.middle-graph-mobile': MiddleGraphMobileMiddleGraphMobile;
       'partner-logo.partner-logo': PartnerLogoPartnerLogo;
       'persona-support-content.persona-support-content': PersonaSupportContentPersonaSupportContent;

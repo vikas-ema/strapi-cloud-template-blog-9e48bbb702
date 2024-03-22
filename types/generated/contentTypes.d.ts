@@ -946,12 +946,17 @@ export interface ApiCompanyCompany extends Schema.SingleType {
     singularName: 'company';
     pluralName: 'companies';
     displayName: 'Company';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     heroTitle: Attribute.Text;
+    leadershipBios: Attribute.Component<
+      'leadership-bios.leadership-bios',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

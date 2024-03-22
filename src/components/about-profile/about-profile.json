@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_about_profile_about_profiles",
+  "info": {
+    "displayName": "aboutProfile"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    }
+  }
+}

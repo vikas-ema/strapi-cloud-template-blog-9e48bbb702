@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_leadership_bios_leadership_bios",
+  "info": {
+    "displayName": "leadershipBios"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "text"
+    },
+    "designation": {
+      "type": "text"
+    },
+    "designationMobile": {
+      "type": "text"
+    },
+    "profilePic": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "aboutProfile": {
+      "displayName": "aboutProfile",
+      "type": "component",
+      "repeatable": true,
+      "component": "about-profile.about-profile"
+    }
+  }
+}

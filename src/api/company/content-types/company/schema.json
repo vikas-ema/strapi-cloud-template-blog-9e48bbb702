@@ -4,7 +4,8 @@
   "info": {
     "singularName": "company",
     "pluralName": "companies",
-    "displayName": "Company"
+    "displayName": "Company",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,12 @@
   "attributes": {
     "heroTitle": {
       "type": "text"
+    },
+    "leadershipBios": {
+      "displayName": "leadershipBios",
+      "type": "component",
+      "repeatable": true,
+      "component": "leadership-bios.leadership-bios"
     }
   }
 }
