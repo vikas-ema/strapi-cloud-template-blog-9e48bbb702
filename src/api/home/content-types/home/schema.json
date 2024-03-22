@@ -343,6 +343,12 @@
       "type": "component",
       "repeatable": false,
       "component": "quotes-data.quotes-data"
+    },
+    "desktopGraphLeftSection": {
+      "displayName": "desktopGraphLeftSection",
+      "type": "component",
+      "repeatable": true,
+      "component": "desktop-graph-left-section.desktop-graph-left-section"
     }
   }
 }

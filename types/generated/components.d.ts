@@ -23,6 +23,18 @@ export interface BuiltEmaPointsBuiltEmaPoints extends Schema.Component {
   };
 }
 
+export interface DesktopGraphLeftSectionDesktopGraphLeftSection
+  extends Schema.Component {
+  collectionName: 'components_desktop_graph_left_section_desktop_graph_left_sections';
+  info: {
+    displayName: 'desktopGraphLeftSection';
+  };
+  attributes: {
+    header: Attribute.Text;
+    description: Attribute.Text;
+  };
+}
+
 export interface FusionModelValuesFusionModelValues extends Schema.Component {
   collectionName: 'components_fusion_model_values_fusion_model_values';
   info: {
@@ -230,6 +242,7 @@ declare module '@strapi/types' {
     export interface Components {
       'about-profile.about-profile': AboutProfileAboutProfile;
       'built-ema-points.built-ema-points': BuiltEmaPointsBuiltEmaPoints;
+      'desktop-graph-left-section.desktop-graph-left-section': DesktopGraphLeftSectionDesktopGraphLeftSection;
       'fusion-model-values.fusion-model-values': FusionModelValuesFusionModelValues;
       'graph-chip-content.graph-chip-content': GraphChipContentGraphChipContent;
       'graph-role-cont.graph-role-cont': GraphRoleContGraphRoleCont;
