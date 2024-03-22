@@ -23,6 +23,24 @@
     },
     "heroDescription": {
       "type": "text"
+    },
+    "leadershipTitle": {
+      "type": "text"
+    },
+    "investorsTitle": {
+      "type": "text"
+    },
+    "advisorsTitle": {
+      "type": "text"
+    },
+    "joinEmaEyebrow": {
+      "type": "text"
+    },
+    "joinEmaTitle": {
+      "type": "text"
+    },
+    "joinEmaDescription": {
+      "type": "text"
     }
   }
 }

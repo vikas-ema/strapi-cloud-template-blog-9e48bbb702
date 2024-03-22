@@ -958,6 +958,12 @@ export interface ApiCompanyCompany extends Schema.SingleType {
       true
     >;
     heroDescription: Attribute.Text;
+    leadershipTitle: Attribute.Text;
+    investorsTitle: Attribute.Text;
+    advisorsTitle: Attribute.Text;
+    joinEmaEyebrow: Attribute.Text;
+    joinEmaTitle: Attribute.Text;
+    joinEmaDescription: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1067,10 +1073,6 @@ export interface ApiHomeHome extends Schema.SingleType {
     >;
     extraVideoContent: Attribute.Media;
     secondHeroSectionImg: Attribute.Media;
-    desktopGraphLeftSection: Attribute.Component<
-      'desktop-graph-left-section.desktop-graph-left-section',
-      true
-    >;
     greenBoxContent: Attribute.Component<
       'green-box-content.green-box-content',
       true
