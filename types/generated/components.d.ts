@@ -125,6 +125,17 @@ export interface GreenBoxContentGreenBoxContent extends Schema.Component {
   };
 }
 
+export interface InvestorsLogoInvestorsLogo extends Schema.Component {
+  collectionName: 'components_investors_logo_investors_logos';
+  info: {
+    displayName: 'investorsLogo';
+  };
+  attributes: {
+    className: Attribute.Text;
+    logo: Attribute.Media;
+  };
+}
+
 export interface LeadershipBiosLeadershipBios extends Schema.Component {
   collectionName: 'components_leadership_bios_leadership_bios';
   info: {
@@ -157,6 +168,19 @@ export interface MiddleGraphMobileMiddleGraphMobile extends Schema.Component {
   };
   attributes: {
     title: Attribute.Text;
+  };
+}
+
+export interface OurValueContentOurValueContent extends Schema.Component {
+  collectionName: 'components_our_value_content_our_value_contents';
+  info: {
+    displayName: 'ourValueContent';
+  };
+  attributes: {
+    title: Attribute.Text;
+    description: Attribute.Text;
+    ourValueKey: Attribute.Text;
+    icon: Attribute.Media;
   };
 }
 
@@ -318,9 +342,11 @@ declare module '@strapi/types' {
       'graph-chip-content.graph-chip-content': GraphChipContentGraphChipContent;
       'graph-role-cont.graph-role-cont': GraphRoleContGraphRoleCont;
       'green-box-content.green-box-content': GreenBoxContentGreenBoxContent;
+      'investors-logo.investors-logo': InvestorsLogoInvestorsLogo;
       'leadership-bios.leadership-bios': LeadershipBiosLeadershipBios;
       'lowest-circle-badge-image.lowest-circle-badge-image': LowestCircleBadgeImageLowestCircleBadgeImage;
       'middle-graph-mobile.middle-graph-mobile': MiddleGraphMobileMiddleGraphMobile;
+      'our-value-content.our-value-content': OurValueContentOurValueContent;
       'partner-logo.partner-logo': PartnerLogoPartnerLogo;
       'persona-support-content.persona-support-content': PersonaSupportContentPersonaSupportContent;
       'quotes-data.quotes-data': QuotesDataQuotesData;

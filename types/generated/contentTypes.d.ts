@@ -964,6 +964,27 @@ export interface ApiCompanyCompany extends Schema.SingleType {
     joinEmaEyebrow: Attribute.Text;
     joinEmaTitle: Attribute.Text;
     joinEmaDescription: Attribute.Text;
+    jobApplyUrl: Attribute.Text;
+    hireEmaTitle: Attribute.Text;
+    joinEmaTitleMobile: Attribute.Text;
+    ourValueTitle: Attribute.Text;
+    heroBgImage: Attribute.Media;
+    investorsProfile: Attribute.Component<
+      'leadership-bios.leadership-bios',
+      true
+    >;
+    advisorsProfile: Attribute.Component<
+      'leadership-bios.leadership-bios',
+      true
+    >;
+    hireEmaBgImage: Attribute.Media;
+    hireEmaBgImageMobile: Attribute.Media;
+    investorsLogo: Attribute.Component<'investors-logo.investors-logo', true>;
+    investorsLogo2: Attribute.Component<'investors-logo.investors-logo', true>;
+    ourValueContent: Attribute.Component<
+      'our-value-content.our-value-content',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
