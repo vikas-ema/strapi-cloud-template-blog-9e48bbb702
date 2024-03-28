@@ -41,6 +41,75 @@
     },
     "joinEmaDescription": {
       "type": "text"
+    },
+    "jobApplyUrl": {
+      "type": "text"
+    },
+    "hireEmaTitle": {
+      "type": "text"
+    },
+    "joinEmaTitleMobile": {
+      "type": "text"
+    },
+    "ourValueTitle": {
+      "type": "text"
+    },
+    "heroBgImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "investorsProfile": {
+      "type": "component",
+      "repeatable": true,
+      "component": "leadership-bios.leadership-bios"
+    },
+    "advisorsProfile": {
+      "type": "component",
+      "repeatable": true,
+      "component": "leadership-bios.leadership-bios"
+    },
+    "hireEmaBgImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "hireEmaBgImageMobile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "investorsLogo": {
+      "displayName": "investorsLogo",
+      "type": "component",
+      "repeatable": true,
+      "component": "investors-logo.investors-logo"
+    },
+    "investorsLogo2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "investors-logo.investors-logo"
+    },
+    "ourValueContent": {
+      "displayName": "ourValueContent",
+      "type": "component",
+      "repeatable": true,
+      "component": "our-value-content.our-value-content"
     }
   }
 }

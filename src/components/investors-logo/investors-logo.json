@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_investors_logo_investors_logos",
+  "info": {
+    "displayName": "investorsLogo"
+  },
+  "options": {},
+  "attributes": {
+    "className": {
+      "type": "text"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

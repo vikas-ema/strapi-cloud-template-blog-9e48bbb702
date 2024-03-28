@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_our_value_content_our_value_contents",
+  "info": {
+    "displayName": "ourValueContent"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "ourValueKey": {
+      "type": "text"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
