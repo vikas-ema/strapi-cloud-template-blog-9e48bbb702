@@ -34,18 +34,6 @@ export interface CompanyTextCompanyText extends Schema.Component {
   };
 }
 
-export interface DesktopGraphLeftSectionDesktopGraphLeftSection
-  extends Schema.Component {
-  collectionName: 'components_desktop_graph_left_section_desktop_graph_left_sections';
-  info: {
-    displayName: 'desktopGraphLeftSection';
-  };
-  attributes: {
-    header: Attribute.Text;
-    description: Attribute.Text;
-  };
-}
-
 export interface FooterHeadFooterHead extends Schema.Component {
   collectionName: 'components_footer_head_footer_heads';
   info: {
@@ -334,7 +322,6 @@ declare module '@strapi/types' {
       'about-profile.about-profile': AboutProfileAboutProfile;
       'built-ema-points.built-ema-points': BuiltEmaPointsBuiltEmaPoints;
       'company-text.company-text': CompanyTextCompanyText;
-      'desktop-graph-left-section.desktop-graph-left-section': DesktopGraphLeftSectionDesktopGraphLeftSection;
       'footer-head.footer-head': FooterHeadFooterHead;
       'footer-section-desktop1.footer-section-desktop1': FooterSectionDesktop1FooterSectionDesktop1;
       'footer-section-desktop2.footer-section-desktop2': FooterSectionDesktop2FooterSectionDesktop2;
