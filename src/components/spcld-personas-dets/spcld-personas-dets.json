@@ -1,7 +1,8 @@
 {
   "collectionName": "components_spcld_personas_dets_spcld_personas_dets",
   "info": {
-    "displayName": "spcldPersonasDets"
+    "displayName": "spcldPersonasDets",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -12,7 +13,7 @@
       "type": "text"
     },
     "isQuotesVisible": {
-      "type": "text"
+      "type": "boolean"
     },
     "personaInfo": {
       "type": "component",
@@ -20,14 +21,15 @@
       "component": "persona-info.persona-info"
     },
     "sideBanner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "customerList": {
       "type": "component",
@@ -35,14 +37,15 @@
       "component": "customer-list.customer-list"
     },
     "sideBannerMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "personaQuotesData": {
       "type": "component",

@@ -1268,6 +1268,10 @@ export interface ApiHomeHome extends Schema.SingleType {
       'lowest-circle-badge-image.lowest-circle-badge-image',
       true
     >;
+    desktopGraphLeftSection: Attribute.Component<
+      'desktop-graph-left-section.desktop-graph-left-section',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1396,6 +1400,7 @@ export interface ApiSolutionSolution extends Schema.SingleType {
     singularName: 'solution';
     pluralName: 'solutions';
     displayName: 'solution';
+    description: '';
   };
   options: {
     draftAndPublish: true;

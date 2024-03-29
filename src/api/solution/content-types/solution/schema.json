@@ -4,7 +4,8 @@
   "info": {
     "singularName": "solution",
     "pluralName": "solutions",
-    "displayName": "solution"
+    "displayName": "solution",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -60,14 +61,15 @@
       "type": "text"
     },
     "heroBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "heroTextPrompts": {
       "displayName": "heroTextPrompts",
@@ -106,24 +108,26 @@
       "component": "faq-list.faq-list"
     },
     "hireEmaBgImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "hireEmaBgImgMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "ourCustomer": {
       "displayName": "ourCustomer",
@@ -138,14 +142,15 @@
       "component": "spcld-personas-dets.spcld-personas-dets"
     },
     "sideBannerSpclzPersona": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "SpecialPersonaList": {
       "displayName": "SpecialPersonaList",
@@ -159,34 +164,37 @@
       "component": "bullet-points.bullet-points"
     },
     "sideBnrSpclzPersonaMob": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "gifUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "heroBgImgMob": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "lookingAheadDescMob": {
       "displayName": "lookingAheadDescMob",

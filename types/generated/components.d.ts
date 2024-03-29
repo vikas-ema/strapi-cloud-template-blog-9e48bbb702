@@ -183,6 +183,18 @@ export interface DataData extends Schema.Component {
   };
 }
 
+export interface DesktopGraphLeftSectionDesktopGraphLeftSection
+  extends Schema.Component {
+  collectionName: 'components_desktop_graph_left_section_desktop_graph_left_sections';
+  info: {
+    displayName: 'desktopGraphLeftSection';
+  };
+  attributes: {
+    header: Attribute.Text;
+    description: Attribute.Text;
+  };
+}
+
 export interface FaqListFaqList extends Schema.Component {
   collectionName: 'components_faq_list_faq_lists';
   info: {
@@ -572,11 +584,12 @@ export interface SpcldPersonasDetsSpcldPersonasDets extends Schema.Component {
   collectionName: 'components_spcld_personas_dets_spcld_personas_dets';
   info: {
     displayName: 'spcldPersonasDets';
+    description: '';
   };
   attributes: {
     sideBannerClass: Attribute.Text;
     moreClients: Attribute.Text;
-    isQuotesVisible: Attribute.Text;
+    isQuotesVisible: Attribute.Boolean;
     personaInfo: Attribute.Component<'persona-info.persona-info'>;
     sideBanner: Attribute.Media;
     customerList: Attribute.Component<'customer-list.customer-list', true>;
@@ -660,6 +673,7 @@ declare module '@strapi/types' {
       'cust-strs-dt-list.cust-strs-dt-list': CustStrsDtListCustStrsDtList;
       'customer-list.customer-list': CustomerListCustomerList;
       'data.data': DataData;
+      'desktop-graph-left-section.desktop-graph-left-section': DesktopGraphLeftSectionDesktopGraphLeftSection;
       'faq-list.faq-list': FaqListFaqList;
       'footer-head.footer-head': FooterHeadFooterHead;
       'footer-section-desktop1.footer-section-desktop1': FooterSectionDesktop1FooterSectionDesktop1;
