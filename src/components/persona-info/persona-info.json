@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_persona_info_persona_infos",
+  "info": {
+    "displayName": "personaInfo"
+  },
+  "options": {},
+  "attributes": {
+    "redirectId": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "showWatchBtn": {
+      "type": "boolean"
+    },
+    "iconClass": {
+      "type": "text"
+    },
+    "containerClass": {
+      "type": "text"
+    },
+    "customTitleClass": {
+      "type": "text"
+    },
+    "contentConatinerClass": {
+      "type": "text"
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

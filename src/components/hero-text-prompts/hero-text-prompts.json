@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_hero_text_prompts_hero_text_prompts",
+  "info": {
+    "displayName": "heroTextPrompts"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

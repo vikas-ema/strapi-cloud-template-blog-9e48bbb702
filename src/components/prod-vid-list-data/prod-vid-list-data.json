@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_prod_vid_list_data_prod_vid_list_data",
+  "info": {
+    "displayName": "prodVidListData"
+  },
+  "options": {},
+  "attributes": {
+    "prodVidId": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text"
+    },
+    "videoUrl": {
+      "type": "text"
+    },
+    "bannerImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "vidUrl": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

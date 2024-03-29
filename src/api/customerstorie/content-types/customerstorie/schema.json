@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "customerstories",
+  "info": {
+    "singularName": "customerstorie",
+    "pluralName": "customerstories",
+    "displayName": "customerstorie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "displayName": "data",
+      "type": "component",
+      "repeatable": true,
+      "component": "data.data"
+    }
+  }
+}

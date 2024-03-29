@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_blog_list_data_blog_list_data",
+  "info": {
+    "displayName": "blogListData"
+  },
+  "options": {},
+  "attributes": {
+    "blogListId": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text"
+    },
+    "link": {
+      "type": "text"
+    },
+    "ctaText": {
+      "type": "text"
+    },
+    "blogId": {
+      "type": "text"
+    },
+    "bannerImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

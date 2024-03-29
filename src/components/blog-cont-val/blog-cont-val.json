@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_blog_cont_val_blog_cont_vals",
+  "info": {
+    "displayName": "blogContVal"
+  },
+  "options": {},
+  "attributes": {
+    "blogId": {
+      "type": "text"
+    },
+    "introDesc": {
+      "type": "text"
+    },
+    "lngTrmMemDes": {
+      "type": "text"
+    },
+    "cpbltsVal": {
+      "type": "text"
+    },
+    "lngSecVal": {
+      "type": "text"
+    },
+    "chlgsDesc": {
+      "type": "text"
+    },
+    "para6": {
+      "type": "text"
+    },
+    "para7": {
+      "type": "text"
+    },
+    "para8": {
+      "type": "text"
+    },
+    "para9": {
+      "type": "text"
+    },
+    "para10": {
+      "type": "text"
+    },
+    "para11": {
+      "type": "text"
+    },
+    "para12": {
+      "type": "text"
+    },
+    "para13": {
+      "type": "text"
+    }
+  }
+}

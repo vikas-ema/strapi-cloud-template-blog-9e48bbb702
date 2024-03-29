@@ -1,0 +1,99 @@
+{
+  "kind": "singleType",
+  "collectionName": "resources",
+  "info": {
+    "singularName": "resource",
+    "pluralName": "resources",
+    "displayName": "resource"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "blogTitle": {
+      "type": "text"
+    },
+    "blogRedirectId": {
+      "type": "text"
+    },
+    "whitePaperTitle": {
+      "type": "text"
+    },
+    "whitepaperRedirectId": {
+      "type": "text"
+    },
+    "custStoriesTitle": {
+      "type": "text"
+    },
+    "custStoriesRedirectId": {
+      "type": "text"
+    },
+    "prodVideosTitle": {
+      "type": "text"
+    },
+    "prodVidsRedirectId": {
+      "type": "text"
+    },
+    "revolutionizeTitle": {
+      "type": "text"
+    },
+    "bgImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "blogListData": {
+      "displayName": "blogListData",
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-list-data.blog-list-data"
+    },
+    "whitePprListData": {
+      "displayName": "whitePprListData",
+      "type": "component",
+      "repeatable": true,
+      "component": "white-ppr-list-data.white-ppr-list-data"
+    },
+    "custStrsDtList": {
+      "displayName": "custStrsDtList",
+      "type": "component",
+      "repeatable": true,
+      "component": "cust-strs-dt-list.cust-strs-dt-list"
+    },
+    "prodVidListData": {
+      "displayName": "prodVidListData",
+      "type": "component",
+      "repeatable": true,
+      "component": "prod-vid-list-data.prod-vid-list-data"
+    },
+    "revolutionizeImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "hireEmaBanMob": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

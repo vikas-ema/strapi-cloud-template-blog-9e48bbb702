@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_personas_details_personas_details",
+  "info": {
+    "displayName": "personasDetails"
+  },
+  "options": {},
+  "attributes": {
+    "sideBannerClass": {
+      "type": "text"
+    },
+    "moreClients": {
+      "type": "text"
+    },
+    "isQuotesVisible": {
+      "type": "boolean"
+    },
+    "personaInfo": {
+      "displayName": "personaInfo",
+      "type": "component",
+      "repeatable": false,
+      "component": "persona-info.persona-info"
+    },
+    "sideBanner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "customerList": {
+      "displayName": "customerList",
+      "type": "component",
+      "repeatable": true,
+      "component": "customer-list.customer-list"
+    },
+    "sideBannerMobile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "personaQuotesData": {
+      "displayName": "personaQuotesData",
+      "type": "component",
+      "repeatable": false,
+      "component": "persona-quotes-data.persona-quotes-data"
+    },
+    "bulletPoints": {
+      "displayName": "bulletPoints",
+      "type": "component",
+      "repeatable": true,
+      "component": "bullet-points.bullet-points"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_customer_list_customer_lists",
+  "info": {
+    "displayName": "customerList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "iconClassName": {
+      "type": "text"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

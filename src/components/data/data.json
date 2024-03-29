@@ -1,0 +1,139 @@
+{
+  "collectionName": "components_data_data",
+  "info": {
+    "displayName": "data",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "custStrsId": {
+      "type": "text"
+    },
+    "whPprHead": {
+      "type": "text"
+    },
+    "whPprSHead": {
+      "type": "text"
+    },
+    "desc1": {
+      "type": "text"
+    },
+    "desc2": {
+      "type": "text"
+    },
+    "desc4": {
+      "type": "text"
+    },
+    "scndHdrSec": {
+      "type": "text"
+    },
+    "custSprtDesc": {
+      "type": "text"
+    },
+    "custSprtPara1": {
+      "type": "text"
+    },
+    "custSprtPara2": {
+      "type": "text"
+    },
+    "custPara2": {
+      "type": "text"
+    },
+    "quoteMsg": {
+      "type": "text"
+    },
+    "quoteAthr": {
+      "type": "text"
+    },
+    "custSprtPara3": {
+      "type": "text"
+    },
+    "addUser": {
+      "type": "text"
+    },
+    "userQuotes": {
+      "type": "text"
+    },
+    "siteLink": {
+      "type": "text"
+    },
+    "custPara3": {
+      "type": "text"
+    },
+    "secSecnPara3": {
+      "type": "text"
+    },
+    "custPara4": {
+      "type": "text"
+    },
+    "about": {
+      "type": "text"
+    },
+    "extraGraphText": {
+      "type": "text"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "industry": {
+      "type": "text"
+    },
+    "industryDesc": {
+      "type": "text"
+    },
+    "featuringName": {
+      "type": "text"
+    },
+    "boxContHdr": {
+      "type": "text"
+    },
+    "featureDesig": {
+      "type": "text"
+    },
+    "bxCont": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bx-cont.bx-cont"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "featureImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "custChatImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "extraGraphImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

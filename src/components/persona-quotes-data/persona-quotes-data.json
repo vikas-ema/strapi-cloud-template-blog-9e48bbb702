@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_persona_quotes_data_persona_quotes_data",
+  "info": {
+    "displayName": "personaQuotesData"
+  },
+  "options": {},
+  "attributes": {
+    "quotes": {
+      "type": "text"
+    },
+    "quotesSubTitle": {
+      "type": "text"
+    }
+  }
+}

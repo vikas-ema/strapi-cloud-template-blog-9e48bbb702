@@ -903,6 +903,48 @@ export interface ApiAuthorAuthor extends Schema.CollectionType {
   };
 }
 
+export interface ApiBlogcontentBlogcontent extends Schema.SingleType {
+  collectionName: 'blogcontents';
+  info: {
+    singularName: 'blogcontent';
+    pluralName: 'blogcontents';
+    displayName: 'blogcontent';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    blogTitle: Attribute.Text;
+    subTitle: Attribute.Text;
+    profileName: Attribute.Text;
+    profileRole: Attribute.Text;
+    metaImage: Attribute.Media;
+    shareText: Attribute.Text;
+    hireEmaTitle: Attribute.Text;
+    blogContVal: Attribute.Component<'blog-cont-val.blog-cont-val', true>;
+    blogBgImg: Attribute.Media;
+    headerBanner: Attribute.Media;
+    profilePicture: Attribute.Media;
+    hireEmaBgImg: Attribute.Media;
+    hireEmaBgImgMob: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::blogcontent.blogcontent',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::blogcontent.blogcontent',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiCategoryCategory extends Schema.CollectionType {
   collectionName: 'categories';
   info: {
@@ -996,6 +1038,37 @@ export interface ApiCompanyCompany extends Schema.SingleType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::company.company',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiCustomerstorieCustomerstorie extends Schema.SingleType {
+  collectionName: 'customerstories';
+  info: {
+    singularName: 'customerstorie';
+    pluralName: 'customerstories';
+    displayName: 'customerstorie';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    data: Attribute.Component<'data.data', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::customerstorie.customerstorie',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::customerstorie.customerstorie',
       'oneToOne',
       'admin::user'
     > &
@@ -1227,6 +1300,180 @@ export interface ApiNewNew extends Schema.CollectionType {
   };
 }
 
+export interface ApiNewcontentNewcontent extends Schema.SingleType {
+  collectionName: 'newcontents';
+  info: {
+    singularName: 'newcontent';
+    pluralName: 'newcontents';
+    displayName: 'newcontent';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.Text;
+    bgImage: Attribute.Media;
+    newsListData: Attribute.Component<'news-list-data.news-list-data', true>;
+    revolutionizeTitle: Attribute.Text;
+    revolutionizeImg: Attribute.Media;
+    hireEmaBanMob: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::newcontent.newcontent',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::newcontent.newcontent',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiResourceResource extends Schema.SingleType {
+  collectionName: 'resources';
+  info: {
+    singularName: 'resource';
+    pluralName: 'resources';
+    displayName: 'resource';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.Text;
+    blogTitle: Attribute.Text;
+    blogRedirectId: Attribute.Text;
+    whitePaperTitle: Attribute.Text;
+    whitepaperRedirectId: Attribute.Text;
+    custStoriesTitle: Attribute.Text;
+    custStoriesRedirectId: Attribute.Text;
+    prodVideosTitle: Attribute.Text;
+    prodVidsRedirectId: Attribute.Text;
+    revolutionizeTitle: Attribute.Text;
+    bgImage: Attribute.Media;
+    blogListData: Attribute.Component<'blog-list-data.blog-list-data', true>;
+    whitePprListData: Attribute.Component<
+      'white-ppr-list-data.white-ppr-list-data',
+      true
+    >;
+    custStrsDtList: Attribute.Component<
+      'cust-strs-dt-list.cust-strs-dt-list',
+      true
+    >;
+    prodVidListData: Attribute.Component<
+      'prod-vid-list-data.prod-vid-list-data',
+      true
+    >;
+    revolutionizeImg: Attribute.Media;
+    hireEmaBanMob: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::resource.resource',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::resource.resource',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSolutionSolution extends Schema.SingleType {
+  collectionName: 'solutions';
+  info: {
+    singularName: 'solution';
+    pluralName: 'solutions';
+    displayName: 'solution';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    heroEyebrow: Attribute.Text;
+    heroTitle: Attribute.Text;
+    heroMobileTitle: Attribute.Text;
+    heroDescription: Attribute.Text;
+    introTitle: Attribute.Text;
+    introDescription: Attribute.Text;
+    personasTitle: Attribute.Text;
+    adnlPersonaTitle: Attribute.Text;
+    lookingAheadTitle: Attribute.Text;
+    faqEyebrow: Attribute.Text;
+    faqTitle: Attribute.Text;
+    hireEmaTitle: Attribute.Text;
+    manyMore: Attribute.Text;
+    ourCustHeader: Attribute.Text;
+    sideBannerClass: Attribute.Text;
+    SpecialPersonaTitle: Attribute.Text;
+    heroBackgroundImage: Attribute.Media;
+    heroTextPrompts: Attribute.Component<
+      'hero-text-prompts.hero-text-prompts',
+      true
+    >;
+    introBulletPoints: Attribute.Component<
+      'intro-bullet-points.intro-bullet-points',
+      true
+    >;
+    personasDetails: Attribute.Component<
+      'personas-details.personas-details',
+      true
+    >;
+    adnlPersonas: Attribute.Component<'adnl-personas.adnl-personas', true>;
+    lookingAheadDesc: Attribute.Component<
+      'looking-ahead-desc.looking-ahead-desc',
+      true
+    >;
+    faqList: Attribute.Component<'faq-list.faq-list', true>;
+    hireEmaBgImg: Attribute.Media;
+    hireEmaBgImgMobile: Attribute.Media;
+    ourCustomer: Attribute.Component<'our-customer.our-customer', true>;
+    spcldPersonasDets: Attribute.Component<
+      'spcld-personas-dets.spcld-personas-dets',
+      true
+    >;
+    sideBannerSpclzPersona: Attribute.Media;
+    SpecialPersonaList: Attribute.Component<
+      'special-persona-list.special-persona-list',
+      true
+    >;
+    bulletPoints: Attribute.Component<'bullet-points.bullet-points', true>;
+    sideBnrSpclzPersonaMob: Attribute.Media;
+    gifUrl: Attribute.Media;
+    heroBgImgMob: Attribute.Media;
+    lookingAheadDescMob: Attribute.Component<
+      'looking-ahead-desc-mob.looking-ahead-desc-mob',
+      true
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::solution.solution',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::solution.solution',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1248,12 +1495,17 @@ declare module '@strapi/types' {
       'api::about.about': ApiAboutAbout;
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
+      'api::blogcontent.blogcontent': ApiBlogcontentBlogcontent;
       'api::category.category': ApiCategoryCategory;
       'api::company.company': ApiCompanyCompany;
+      'api::customerstorie.customerstorie': ApiCustomerstorieCustomerstorie;
       'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;
       'api::home.home': ApiHomeHome;
       'api::new.new': ApiNewNew;
+      'api::newcontent.newcontent': ApiNewcontentNewcontent;
+      'api::resource.resource': ApiResourceResource;
+      'api::solution.solution': ApiSolutionSolution;
     }
   }
 }

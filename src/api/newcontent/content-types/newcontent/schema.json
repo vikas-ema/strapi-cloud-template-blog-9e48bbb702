@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "newcontents",
+  "info": {
+    "singularName": "newcontent",
+    "pluralName": "newcontents",
+    "displayName": "newcontent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "bgImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "newsListData": {
+      "displayName": "newsListData",
+      "type": "component",
+      "repeatable": true,
+      "component": "news-list-data.news-list-data"
+    },
+    "revolutionizeTitle": {
+      "type": "text"
+    },
+    "revolutionizeImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "hireEmaBanMob": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_looking_ahead_desc_mob_looking_ahead_desc_mobs",
+  "info": {
+    "displayName": "lookingAheadDescMob"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

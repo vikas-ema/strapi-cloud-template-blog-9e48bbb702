@@ -1,0 +1,198 @@
+{
+  "kind": "singleType",
+  "collectionName": "solutions",
+  "info": {
+    "singularName": "solution",
+    "pluralName": "solutions",
+    "displayName": "solution"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroEyebrow": {
+      "type": "text"
+    },
+    "heroTitle": {
+      "type": "text"
+    },
+    "heroMobileTitle": {
+      "type": "text"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "introTitle": {
+      "type": "text"
+    },
+    "introDescription": {
+      "type": "text"
+    },
+    "personasTitle": {
+      "type": "text"
+    },
+    "adnlPersonaTitle": {
+      "type": "text"
+    },
+    "lookingAheadTitle": {
+      "type": "text"
+    },
+    "faqEyebrow": {
+      "type": "text"
+    },
+    "faqTitle": {
+      "type": "text"
+    },
+    "hireEmaTitle": {
+      "type": "text"
+    },
+    "manyMore": {
+      "type": "text"
+    },
+    "ourCustHeader": {
+      "type": "text"
+    },
+    "sideBannerClass": {
+      "type": "text"
+    },
+    "SpecialPersonaTitle": {
+      "type": "text"
+    },
+    "heroBackgroundImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "heroTextPrompts": {
+      "displayName": "heroTextPrompts",
+      "type": "component",
+      "repeatable": true,
+      "component": "hero-text-prompts.hero-text-prompts"
+    },
+    "introBulletPoints": {
+      "displayName": "introBulletPoints",
+      "type": "component",
+      "repeatable": true,
+      "component": "intro-bullet-points.intro-bullet-points"
+    },
+    "personasDetails": {
+      "displayName": "personasDetails",
+      "type": "component",
+      "repeatable": true,
+      "component": "personas-details.personas-details"
+    },
+    "adnlPersonas": {
+      "displayName": "adnlPersonas",
+      "type": "component",
+      "repeatable": true,
+      "component": "adnl-personas.adnl-personas"
+    },
+    "lookingAheadDesc": {
+      "displayName": "lookingAheadDesc",
+      "type": "component",
+      "repeatable": true,
+      "component": "looking-ahead-desc.looking-ahead-desc"
+    },
+    "faqList": {
+      "displayName": "faqList",
+      "type": "component",
+      "repeatable": true,
+      "component": "faq-list.faq-list"
+    },
+    "hireEmaBgImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "hireEmaBgImgMobile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ourCustomer": {
+      "displayName": "ourCustomer",
+      "type": "component",
+      "repeatable": true,
+      "component": "our-customer.our-customer"
+    },
+    "spcldPersonasDets": {
+      "displayName": "spcldPersonasDets",
+      "type": "component",
+      "repeatable": true,
+      "component": "spcld-personas-dets.spcld-personas-dets"
+    },
+    "sideBannerSpclzPersona": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "SpecialPersonaList": {
+      "displayName": "SpecialPersonaList",
+      "type": "component",
+      "repeatable": true,
+      "component": "special-persona-list.special-persona-list"
+    },
+    "bulletPoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bullet-points.bullet-points"
+    },
+    "sideBnrSpclzPersonaMob": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "gifUrl": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "heroBgImgMob": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "lookingAheadDescMob": {
+      "displayName": "lookingAheadDescMob",
+      "type": "component",
+      "repeatable": true,
+      "component": "looking-ahead-desc-mob.looking-ahead-desc-mob"
+    }
+  }
+}

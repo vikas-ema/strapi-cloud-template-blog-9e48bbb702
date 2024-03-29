@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_bx_cont_bx_conts",
+  "info": {
+    "displayName": "bxCont"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

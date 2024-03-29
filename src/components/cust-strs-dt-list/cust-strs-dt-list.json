@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_cust_strs_dt_list_cust_strs_dt_lists",
+  "info": {
+    "displayName": "custStrsDtList"
+  },
+  "options": {},
+  "attributes": {
+    "custStoriesid": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text"
+    },
+    "link": {
+      "type": "text"
+    },
+    "ctaText": {
+      "type": "text"
+    },
+    "customerStoriesId": {
+      "type": "text"
+    },
+    "bannerImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

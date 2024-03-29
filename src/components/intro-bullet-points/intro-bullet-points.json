@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_intro_bullet_points_intro_bullet_points",
+  "info": {
+    "displayName": "introBulletPoints"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "iconClassName": {
+      "type": "text"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

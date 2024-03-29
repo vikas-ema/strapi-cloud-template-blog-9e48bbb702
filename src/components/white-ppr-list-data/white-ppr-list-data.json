@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_white_ppr_list_data_white_ppr_list_data",
+  "info": {
+    "displayName": "whitePprListData"
+  },
+  "options": {},
+  "attributes": {
+    "whitePprListId": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text"
+    },
+    "ctaText": {
+      "type": "text"
+    },
+    "link": {
+      "type": "text"
+    },
+    "bannerImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "dwnldData": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

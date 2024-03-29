@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_looking_ahead_desc_looking_ahead_descs",
+  "info": {
+    "displayName": "lookingAheadDesc"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

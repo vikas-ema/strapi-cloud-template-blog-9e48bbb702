@@ -1,0 +1,99 @@
+{
+  "kind": "singleType",
+  "collectionName": "blogcontents",
+  "info": {
+    "singularName": "blogcontent",
+    "pluralName": "blogcontents",
+    "displayName": "blogcontent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blogTitle": {
+      "type": "text"
+    },
+    "subTitle": {
+      "type": "text"
+    },
+    "profileName": {
+      "type": "text"
+    },
+    "profileRole": {
+      "type": "text"
+    },
+    "metaImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "shareText": {
+      "type": "text"
+    },
+    "hireEmaTitle": {
+      "type": "text"
+    },
+    "blogContVal": {
+      "displayName": "blogContVal",
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-cont-val.blog-cont-val"
+    },
+    "blogBgImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "headerBanner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "profilePicture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "hireEmaBgImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "hireEmaBgImgMob": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
