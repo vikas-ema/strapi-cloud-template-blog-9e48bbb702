@@ -1310,6 +1310,7 @@ export interface ApiNewcontentNewcontent extends Schema.SingleType {
     singularName: 'newcontent';
     pluralName: 'newcontents';
     displayName: 'newcontent';
+    description: '';
   };
   options: {
     draftAndPublish: true;

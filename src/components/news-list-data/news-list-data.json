@@ -1,7 +1,8 @@
 {
   "collectionName": "components_news_list_data_news_list_data",
   "info": {
-    "displayName": "newsListData"
+    "displayName": "newsListData",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -20,18 +21,22 @@
     "blogId": {
       "type": "text"
     },
-    "isLink": {
-      "type": "text"
-    },
     "bannerImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "className": {
+      "type": "text"
+    },
+    "isLink": {
+      "type": "boolean"
     }
   }
 }

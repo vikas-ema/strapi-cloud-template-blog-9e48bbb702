@@ -378,6 +378,7 @@ export interface NewsListDataNewsListData extends Schema.Component {
   collectionName: 'components_news_list_data_news_list_data';
   info: {
     displayName: 'newsListData';
+    description: '';
   };
   attributes: {
     blogListId: Attribute.Text;
@@ -385,8 +386,9 @@ export interface NewsListDataNewsListData extends Schema.Component {
     link: Attribute.Text;
     ctaText: Attribute.Text;
     blogId: Attribute.Text;
-    isLink: Attribute.Text;
     bannerImg: Attribute.Media;
+    className: Attribute.Text;
+    isLink: Attribute.Boolean;
   };
 }
 
