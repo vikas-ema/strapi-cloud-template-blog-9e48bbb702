@@ -1268,10 +1268,6 @@ export interface ApiHomeHome extends Schema.SingleType {
       'lowest-circle-badge-image.lowest-circle-badge-image',
       true
     >;
-    desktopGraphLeftSection: Attribute.Component<
-      'desktop-graph-left-section.desktop-graph-left-section',
-      true
-    >;
     SpecialzedPersonasHeading: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
