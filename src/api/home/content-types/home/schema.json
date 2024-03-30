@@ -344,6 +344,9 @@
       "type": "component",
       "repeatable": true,
       "component": "desktop-graph-left-section.desktop-graph-left-section"
+    },
+    "SpecialzedPersonasHeading": {
+      "type": "text"
     }
   }
 }
