@@ -180,6 +180,7 @@ export interface DataData extends Schema.Component {
     featureImg: Attribute.Media;
     custChatImg: Attribute.Media;
     extraGraphImg: Attribute.Media;
+    desc3: Attribute.Text;
   };
 }
 
