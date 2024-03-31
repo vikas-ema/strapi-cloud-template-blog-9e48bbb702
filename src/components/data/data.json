@@ -141,6 +141,9 @@
     },
     "desc3": {
       "type": "text"
+    },
+    "webiteUrl": {
+      "type": "text"
     }
   }
 }

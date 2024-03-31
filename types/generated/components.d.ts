@@ -181,6 +181,19 @@ export interface DataData extends Schema.Component {
     custChatImg: Attribute.Media;
     extraGraphImg: Attribute.Media;
     desc3: Attribute.Text;
+    webiteUrl: Attribute.Text;
+  };
+}
+
+export interface DesktopGraphLeftSectionDesktopGraphLeftSection
+  extends Schema.Component {
+  collectionName: 'components_desktop_graph_left_section_desktop_graph_left_sections';
+  info: {
+    displayName: 'desktopGraphLeftSection';
+  };
+  attributes: {
+    header: Attribute.Text;
+    description: Attribute.Text;
   };
 }
 
@@ -664,6 +677,7 @@ declare module '@strapi/types' {
       'cust-strs-dt-list.cust-strs-dt-list': CustStrsDtListCustStrsDtList;
       'customer-list.customer-list': CustomerListCustomerList;
       'data.data': DataData;
+      'desktop-graph-left-section.desktop-graph-left-section': DesktopGraphLeftSectionDesktopGraphLeftSection;
       'faq-list.faq-list': FaqListFaqList;
       'footer-head.footer-head': FooterHeadFooterHead;
       'footer-section-desktop1.footer-section-desktop1': FooterSectionDesktop1FooterSectionDesktop1;

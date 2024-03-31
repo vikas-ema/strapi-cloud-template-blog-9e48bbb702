@@ -341,6 +341,12 @@
     },
     "SpecialzedPersonasHeading": {
       "type": "text"
+    },
+    "desktopGraphLeftSection": {
+      "displayName": "desktopGraphLeftSection",
+      "type": "component",
+      "repeatable": true,
+      "component": "desktop-graph-left-section.desktop-graph-left-section"
     }
   }
 }

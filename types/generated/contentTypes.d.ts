@@ -1269,6 +1269,10 @@ export interface ApiHomeHome extends Schema.SingleType {
       true
     >;
     SpecialzedPersonasHeading: Attribute.Text;
+    desktopGraphLeftSection: Attribute.Component<
+      'desktop-graph-left-section.desktop-graph-left-section',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
