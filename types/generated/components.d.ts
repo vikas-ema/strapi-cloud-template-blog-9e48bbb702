@@ -391,6 +391,7 @@ export interface NewsListDataNewsListData extends Schema.Component {
     bannerImg: Attribute.Media;
     className: Attribute.Text;
     isLink: Attribute.Boolean;
+    bannerImgBlackWhite: Attribute.Media;
   };
 }
 
